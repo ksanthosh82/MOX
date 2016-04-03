@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html ng-app="mox" ng-controller="moxController">
+	<head>
+		<meta charset="utf-8">
+		<title>{{title}}</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Chennai export company">
+		<meta name="keywords" content="mox,exports,chennai,wholasale">
+		<meta name="author" content="Santhosh">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<!-- Magnific Popup -->
+		<link href="css/magnific-popup.css" rel="stylesheet">
+		<!-- Owl carousel -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+
+		<!-- CSS for this page -->
+		<!-- Revolution Slider -->
+		<link href="css/settings.css" rel="stylesheet">
+
+		<!-- Base style -->
+		<link href="css/styles/style.css" rel="stylesheet">
+		<!-- Skin CSS -->
+		<link href="css/styles/skin-lblue.css" rel="stylesheet" id="color_theme">
+
+		<!-- Custom CSS. Type your CSS code in custom.css file -->
+		<link href="css/custom.css" rel="stylesheet">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+		<script type="text/javascript">
+			function alertSearchBox(){
+				alert("Searching facility coming soon");
+			}
+		</script>
+	</head>
+
+	<!-- Add class "boxed" along with body for boxed layout. -->
+	<!-- Add "pattern-x" (1 to 5) for background patterns. -->
+	<!-- Add "img-x" (1 to 5) for background images. -->
+	<body>
+
+		<!-- Outer Starts -->
+		<div class="outer">
+
+			<!-- Top bar starts -->
+			<div class="top-bar">
+				<div class="container">
+
+					<!-- Contact starts -->
+					<div class="tb-contact pull-left">
+						<!-- Email -->
+						<i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:ksanthosh82@gmail.com">Contact us on Mail</a>
+						&nbsp;&nbsp;
+						<!-- Phone -->
+						<i class="fa fa-phone color"></i> &nbsp; +91 9962000442
+					</div>
+					<!-- Contact ends -->
+
+					<!-- Langauge starts -->
+					<div class="tb-language dropdown pull-right">
+						<a href="#" data-target="#" data-toggle="dropdown"><i class="fa fa-globe"></i> English <i class="fa fa-angle-down color"></i></a>
+						<!-- Dropdown menu with languages -->
+						<ul class="dropdown-menu dropdown-mini" role="menu">
+							<!-- li><a href="#">Hindi</a></li>
+							<li><a href="#">Tamil</a></li>
+							<li><a href="#">Kanada</a></li -->
+							<li><a href="#">English</a></li>
+						</ul>
+					</div>
+					<!-- Language ends -->
+
+					<!-- Search section for responsive design -->
+					<div class="tb-search pull-left">
+						<a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+						<div class="b-dropdown-block">
+							<form role="form" action="alertSearchBox()">
+								<!-- Input Group -->
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Type Something">
+									<span class="input-group-btn">
+										<button class="btn btn-color" type="button">Search</button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Search section ends -->
+
+					<!-- Social media starts -->
+					<div class="tb-social pull-right">
+						<div class="brand-bg text-right">
+							<!-- Brand Icons -->
+							<a href="#" class="facebook"><i class="fa fa-facebook square-2 rounded-1"></i></a>
+							<a href="#" class="twitter"><i class="fa fa-twitter square-2 rounded-1"></i></a>
+							<!-- a href="#" class="google-plus"><i class="fa fa-google-plus square-2 rounded-1"></i></a>
+							<a href="#" class="linkedin"><i class="fa fa-linkedin square-2 rounded-1"></i></a>
+							<a href="#" class="pinterest"><i class="fa fa-pinterest square-2 rounded-1"></i></a -->
+						</div>
+					</div>
+					<!-- Social media ends -->
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<!-- Top bar ends -->
+
+			<!-- Header two Starts -->
+			<div class="header-2">
+
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<!-- Logo section -->
+							<div class="logo">
+								<h1>
+									<a href="#">
+										<!-- i class="fa fa-hand-o-right"></i> <i class="fa fa-suitcase"></i> MOX -->
+										<img src="img/logo.png" alt="" class="img-responsive" />
+									</a>
+								</h1>
+							</div>
+						</div>
+						<div class="col-md-9">
+
+							<!-- Navigation starts.  -->
+							<div class="navy">
+								<ul>
+									<!-- Main menu -->
+									<li><a href="#" data-ng-click="getTemplate('home')">Home</a>
+									</li>
+
+									<li><a href="#">Products</a>
+										<ul>
+											<li><a href="#" data-ng-click="getTemplate('freshVegetables')">Fresh Vegetables</a>
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('freshFruits')">Fresh Fruits</a>
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('coconut')">Cocunut</a>
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('drumsticks')">Drumsticks</a>
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('indianSpices')">Indian Spices</a>
+												<!-- ul>
+													<li><a href="#" data-ng-click="getTemplate('cuminSeeds')">Cumin Seeds</a></li>
+													<li><a href="#" data-ng-click="getTemplate('turmericFingers')">Turmeric Fingers</a></li>
+													<li><a href="#" data-ng-click="getTemplate('mustardSeeds')">Mustard Seeds</a></li>
+													<li><a href="#" data-ng-click="getTemplate('curryLeaves')">Curry Leaves</a></li>
+													<li><a href="#" data-ng-click="getTemplate('cloves')">Cloves</a></li>
+													<li><a href="#" data-ng-click="getTemplate('corianderSeeds')">Coriander Seeds</a></li>
+													<li><a href="#" data-ng-click="getTemplate('blackPepped')">Black Pepper</a></li>
+													<li><a href="#" data-ng-click="getTemplate('redGreenChilliWhole')">Red/ Green Chilli Whole</a></li>
+													<li><a href="#" data-ng-click="getTemplate('tamarind')">Tamarind</a></li>
+													<li><a href="#" data-ng-click="getTemplate('ginger')">Ginger</a></li>
+													<li><a href="#" data-ng-click="getTemplate('garlic')">Garlic</a></li>
+												</ul -->
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('clayPotHandicrafts')">Clay Pot/ Handicraft</a>
+											</li>
+											<li><a href="#" data-ng-click="getTemplate('garments')">Garments</a>
+											</li>
+										</ul>
+									</li>
+
+									<!-- li><a href="#" data-ng-click="getTemplate('inquiry')">Inquiry</a -->
+									</li>
+									<li><a href="#" data-ng-click="getTemplate('aboutUs')">About Us</a></li>
+									<li><a href="#" data-ng-click="getTemplate('contactUs')">Contact Us</a></li>
+								</ul>
+							</div>
+							<!-- Navigation ends -->
+
+						</div>
+
+						<div class="col-md-1">
+
+							<!-- Search section -->
+							<div class="head-search pull-right">
+								<a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+								<div class="b-dropdown-block">
+									<form role="form">
+										<!-- Input Group -->
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Type Something">
+											<span class="input-group-btn">
+												<button class="btn btn-color" type="button">Search</button>
+											</span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- Search section ends -->
+							<div class="clearfix"></div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Header two ends -->
+
+			<div data-ng-include="template.url"></div>
+
+			<!-- Foot Starts -->
+
+			<div class="foot" id="footerId">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-user"></i>&nbsp;&nbsp;About</h5>
+								<p>Who are we?
+We are Chennai export company. Our job is to support and develop India's export trade by exploring business opportunities.
+We are a self-financing company that operates at advice of financial analysts.
+
+What do we do?
+We handle small business solutions exports. We also support direct export abroad. </p>
+								<div class="brand-bg">
+									<!-- Social Media Icons -->
+									<a href="#" class="facebook"><i class="fa fa-facebook circle-3"></i></a>
+									<a href="#" class="twitter"><i class="fa fa-twitter circle-3"></i></a>
+									<!-- a href="#" class="google-plus"><i class="fa fa-google-plus circle-3"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin circle-3"></i></a>
+									<a href="#" class="pinterest"><i class="fa fa-pinterest circle-3"></i></a -->
+								</div>
+								<!-- div class="subscribe-box">
+									<h5 class="bold">Subscribe :</h5>
+									<form role="form">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Enter Email Id">
+											<span class="input-group-btn">
+												<button class="btn btn-color" type="button">Subscribe</button>
+											</span>
+										</div>
+									</form>
+								</div -->
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-comments"></i>&nbsp;&nbsp;Recent Posts</h5>
+								<!-- Foot Item Content -->
+								<div class="foot-item-content">
+									<ul class="list-unstyled">
+										<!-- Link -->
+										<!-- li><a href="#">�:::P:::� �:::E:::� �:::R:::� �:::F:::� �:::E:::� �:::C:::� �:::T:::�</a></li>
+										<li><a href="#">+_�_�_�_�_���� NUMBER 1 ALL THE WAY! ����_�_�_�_�_+</a></li>
+										<li><a href="#">??? (���)YOU MAKE(���)BUYERS(���)LOOK GOOD(���)???</a></li -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Recent Images</h5>
+								<!-- Foot Item Content -->
+								<div class="foot-item-content">
+									<!-- Foot Recent Image -->
+									<div class="foot-recent-img">
+										<!-- a href="img/gallery/small/1.jpg" class="lightbox"><img src="img/gallery/small/1.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/2.jpg" class="lightbox"><img src="img/gallery/small/2.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/3.jpg" class="lightbox"><img src="img/gallery/small/3.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+									</div>
+									<div class="foot-recent-img">
+										<a href="img/gallery/small/1.jpg" class="lightbox"><img src="img/gallery/small/1.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/2.jpg" class="lightbox"><img src="img/gallery/small/2.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/3.jpg" class="lightbox"><img src="img/gallery/small/3.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+									</div>
+									<div class="foot-recent-img">
+										<a href="img/gallery/small/1.jpg" class="lightbox"><img src="img/gallery/small/1.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/2.jpg" class="lightbox"><img src="img/gallery/small/2.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+										<a href="img/gallery/small/3.jpg" class="lightbox"><img src="img/gallery/small/3.jpg" alt="" class="img-responsive img-thumbnail" /></a -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Contact Us</h5>
+								<!-- Foot Item Content -->
+								<div class="foot-item-content address">
+									<!-- Heading -->
+									<h6 class="bold"><i class="fa fa-home"></i>&nbsp;&nbsp;MOX Exports</h6>
+									<!-- Paragraph -->
+									<p class="add">
+									   # 86, Pillaiyar Koil Street,<br />
+									   Golden George Nagar, Nerkundram,<br />
+									   Chennai - 600 107</p>
+									<p class="tel"> <i class="fa fa-phone"></i> Phone  : +91 44 2656 2565<br /></p>
+									<p class="tel"> <i class="fa fa-mobile"></i> Mobile : <br />
+									<p class="add"> <i class="fa fa-mobile"></i> +91-9962000442<br /></p>
+									<p class="add"> <i class="fa fa-mobile"></i> +91 9884888952<br /></p></p>
+									<i class="fa fa-envelope"></i>  Mail : <a href="#">moxexports@gmail.com</a><br />
+									<i class="fa fa-calendar"></i> Business Hours: 9:30AM to 5:30 PM IST<br/>
+									<p class="add"><i class="fa fa-bullseye"></i>Available on call 24/7</p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Foot Ends -->
+
+			<!-- Footer Starts -->
+
+			<footer>
+				<!-- Container -->
+				<div class="container">
+					<!-- Footer Content -->
+						<!-- Paragraph -->
+						<p class="pull-left">Copyright &copy; 2014 - <a href="#">MOX Exports</a></p>
+						<ul class="list-inline pull-right">
+							<!-- List -->
+							<li><a href="index.html">Home</a><li>
+							<li><a href="service.html">Service</a></li>
+							<li><a href="feature.html">Features</a></li>
+							<li><a href="about-us.html">About</a></li>
+							<li><a href="contact-us.html">Contact</a></li>
+						</ul>
+						<!-- Clearfix -->
+						<div class="clearfix"></div>
+				</div>
+			</footer>
+
+			<!-- Footer Ends -->
+
+		</div>
+
+		<!-- Outer Ends -->
+
+		<!-- Scroll to top -->
+		<span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>
+
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholders JS -->
+		<script src="js/placeholders.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Angular -->
+		<script src="js/angular.js"></script>
+		<script src="js/angular-sanitize.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+		<!-- Javascript for this page -->
+		<!-- Revolution slider -->
+		<script src="js/jquery.themepunch.tools.min.js"></script>
+		<script src="js/jquery.themepunch.revolution.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- jQuery CountTo -->
+		<script src="js/jquery.countTo.js"></script>
+
+		<script type="text/javascript">
+			<!-- Counting code -->
+			$(document).ready(function(){
+				// Way Points With Count To()
+				$('.number-count').waypoint(function(down){
+					if(!$(this).hasClass('stop-counter'))
+					{
+						$(this).countTo();
+						$(this).addClass('stop-counter');
+					}
+				}, {
+					offset: '90%'
+				});
+			});
+		</script>
+
+		<!-- Custom JS. Type your JS code in custom.js file -->
+		<script src="js/custom.js"></script>
+
+		<!--
+		Style switcher. This is just for demo purpose only.
+		If you don't want remove the below line.
+		Some of the features of style switcher won't work on offline. THey only work when you upload it to server
+		-->
+		<!-- <script src="style-switcher/style-switcher.js"></script> -->
+
+	</body>
+</html>

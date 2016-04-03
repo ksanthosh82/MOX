@@ -1,0 +1,53 @@
+<div class="block-heading-two">
+	<h3><span>Inquire about {{template.name}}</span></h3>
+</div>
+
+<!-- Appointment content -->
+<form role="form">
+	<div class="row">
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label for="inputOne">Full Name</label>
+				<input class="form-control" type="text" id="inputOne" placeholder="Name" data-ng-model="inq.name">
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label for="inputTwo">Email</label>
+				<input class="form-control" type="email" id="inputTwo" placeholder="Email" data-ng-model="inq.email">
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label for="inputThree">Phone</label>
+				<input class="form-control" type="text" id="inputThree" placeholder="Phone" data-ng-model="inq.phone">
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label for="inputFour">Date</label>
+				<input class="form-control" type="text" id="inputFour" placeholder="DD-MM-YYYY" data-ng-model="inq.date">
+			</div>
+		</div>
+		<div class="col-md-12 col-sm-12">
+			<div class="form-group">
+				<label for="inputFive">Inquiry For</label>
+				<select class="form-control" id="inputFive" data-ng-model="inq.Reason">
+					<option selected>Select Reason</option>
+					<option>Book Appointment</option>
+					<option>Check on Prices</option>
+					<option>Check on Customers</option>
+					<option>Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-12 col-sm-12">
+			<div class="form-group">
+				<label for="inputSix">Additional Information</label>
+				<textarea class="form-control" id="inputSix" rows="6" placeholder="Additional information" data-ng-model="inq.addlInfo"></textarea>
+			</div>
+			<button type="button" class="btn btn-color">Done</button>&nbsp;
+			<button type="reset" class="btn btn-default">Reset</button>
+		</div>
+	</div>
+</form>

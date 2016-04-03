@@ -1,0 +1,81 @@
+<div class="container">
+
+	<!-- Actual content for Inquiry -->
+	<div class="medical">
+		<div class="medic-appoint">
+			<div class="row">
+				<div class="col-md-7 col-sm-8">
+					<div class="block-heading-two">
+						<h3><span>{{template.name}}</span></h3>
+					</div>
+					<!-- paragraph -->
+					<p>{{template.summary[0]}}</p>
+
+					<hr />
+					<!-- Carousel starts -->
+
+					<!-- Bootstrap carousel usage
+						Bootstrap carousel should have id. Below i am using "bs-carousel-X". Where "X" denotes number". If a page has more than 1 carousel, then add the new carousel with the id "bs-carousel-1", "bs-carousel-2". You also need to update the id in, "carousel indicators" section and "carousel control" section.
+
+						Carousel comes with 3 main data attributes which you can customize. They are...
+						data-interval - Time delay between item cycle. Default value "5000".
+						data-pause - Pause on hover. Default value "pause".
+						data-wrap - Continues cycle or stop at the end. Default value "true".
+					-->
+
+					<!-- Outer layer -->
+					<div id="bs-carousel-1" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true">
+						<!-- Slides. You can also add captions -->
+						<div class="carousel-inner">
+							<!-- Item, First item should have extra class "active" -->
+							<div class="item active">
+								<!-- Image -->
+								<img ng-src="{{template.carousel[0].image}}" alt="">
+								<div class="carousel-caption c-bottom-full">
+									<!-- Heading -->
+									<h4><a href="#">{{template.carousel[0].heading}}</a></h4>
+									<!-- Para -->
+									<p>{{template.carousel[0].paragraph}}</p>
+								</div>
+							</div>
+							<div class="item">
+								<img ng-src="{{template.carousel[1].image}}" alt="">
+								<div class="carousel-caption c-bottom-full">
+									<!-- Heading -->
+									<h4><a href="#">{{template.carousel[1].heading}}</a></h4>
+									<!-- Para -->
+									<p>{{template.carousel[1].paragraph}}</p>
+								</div>
+							</div>
+							<div class="item">
+								<img ng-src="{{template.carousel[2].image}}" alt="">
+								<div class="carousel-caption c-bottom-full">
+									<!-- Heading -->
+									<h4><a href="#">{{template.carousel[2].heading}}</a></h4>
+									<!-- Para -->
+									<p>{{template.carousel[2].paragraph}}</p>
+								</div>
+							</div>
+						</div>
+						<!-- Carousel controls (arrows). If you don't need controls, remove the below section -->
+						<a class="left carousel-control" href="#bs-carousel-1" role="button" data-slide="prev">
+							<span class="fa fa-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#bs-carousel-1" role="button" data-slide="next">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+
+					<!-- Carousel ends -->
+
+					<br />
+					<p>{{template.summary[1]}}</p>
+
+				</div>
+				<div class="col-md-5 col-sm-6">
+					<div data-ng-include="appointmentForm"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

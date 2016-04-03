@@ -1,0 +1,112 @@
+     <style>
+       #map {
+         width: 670px;
+         height: 330px;
+         background-color: #CCC;
+       }
+    </style>
+			<!-- Main content starts -->
+
+			<div class="main-block">
+
+				<!-- Page heading two starts -->
+
+				<!-- div class="page-heading-two">
+					<div class="container">
+						<h2>Contact Us <span>Something goes here</span></h2>
+						<div class="breads">
+							Home / <a href="#">Page</a> / <a href="#">Sub Page</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div -->
+
+				<!-- Page heading two ends -->
+
+				<div class="container">
+					<div class="contact-us-two">
+
+						<div class="row">
+							<div class="col-md-5">
+								<!-- Contact Form -->
+								<div class="contact-form">
+									<img class="img-responsive" src="img/aboutus/contact-us-1.jpg" alt="">
+								</div>
+								<hr />
+							</div>
+							<div class="col-md-7">
+								<!-- Contact map -->
+								<div class="contact-map">
+									<h5>Locate Us</h5>
+									<!-- Map Link -->
+									<!-- iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15615.590366449029!2d79.823997513746!3d11.912214884509545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x948a846878ea738c!2sAchariya+Bala+Siksha+Mandir!5e0!3m2!1sen!2sin!4v1402563074325" ></iframe -->
+									<!-- script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.autohuren.world/">autohuren</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(13.0738414,80.18562569999995),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(13.0738414,80.18562569999995)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>86 pillaiyar koil street Golden George Nagar, Mogappair East, Chennai, Tamil Nadu<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script -->
+									<div id="map"></div>
+								</div>
+								<hr />
+							</div>
+						</div>
+
+						<div class="row text-center">
+							<div class="col-md-3 col-sm-6">
+								<!-- Contact Item -->
+								<div class="contact-item bg-red">
+									<!-- Icon -->
+									<i class="fa fa-phone"></i>
+									<!-- Heading -->
+									<h4>Call Us</h4>
+									<!-- Paragraph -->
+									<p>Tel : +91 44 2656 2565<br/>
+										Mob 1 : +91 9962000442<br/>
+										Mob 2 : +91 9884888952</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- Contact Item -->
+								<div class="contact-item bg-lblue">
+									<i class="fa fa-building-o"></i>
+									<h4>Address</h4>
+									<p>MOX Exports,<br/>
+									# 86, Pillaiyar Koil Street,<br/>
+									Golden George Nagar, Nerkundram<br/>
+										Chennai 600107.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- Contact Item -->
+								<div class="contact-item bg-green">
+									<i class="fa fa-envelope"></i>
+									<h4>Mail Us</h4>
+									<p><a href="#">moxexports@gmail.com</a><!-- br />
+										<a href="#">Service@mssolution.com</a --></p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- Contact Item -->
+								<div class="contact-item bg-purple">
+									<i class="fa fa-calendar-o"></i>
+									<h4>Business Hours</h4>
+									<p>Time : 9.30 to 5.30<br />
+										Sunday Holiday</p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Main content ends -->
+
+
+<script>
+  function initMap() {
+	var mapDiv = document.getElementById('map');
+	var map = new google.maps.Map(mapDiv, {
+	  center: {lat: 13.073841, lng: 80.185626},
+	  zoom: 25
+	});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
